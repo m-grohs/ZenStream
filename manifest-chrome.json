@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "ZenStream",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "ZenStream is an Extension that removes distracting Web Player Interfaces on specific streaming Sites, creating a clean and immersive viewing experience.",
 	"action": {
 		"default_title": "ZenStream"
@@ -13,5 +13,6 @@
 		"service_worker": "./src/bg.js",
 		"type": "module"
 	},
-	"permissions": ["activeTab", "scripting"]
+	"permissions": ["activeTab", "scripting"],
+	"host_permissions": ["<all_urls>"]
 }
