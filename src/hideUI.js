@@ -7,22 +7,6 @@ function hideUI() {
       const container = document.querySelector(".f1bwtfkz");
 
       if (container) container.remove();
-
-      // This works also but couldnt get rid of Ratings for now.
-      // To revisit later.
-
-      // const style = document.createElement('style');
-      // style.textContent = `
-      // 	.webPlayerUIContainer {
-      // 		visibility: hidden !important; }
-
-      // 	.webPlayerUIContainer .atvwebplayersdk-captions-overlay {
-      // 		visibility: visible !important; }
-
-      // 	.f11xjbzd {
-      // 		display: none !important; }`;
-
-      // document.head.appendChild(style);
     }
 
     // DISNEY+
@@ -47,35 +31,6 @@ function hideUI() {
       `;
 
       (document.head || document.documentElement).appendChild(style);
-//       if (!document.getElementById("hide-button-container-style")) {
-//         const style = document.createElement("style");
-//         style.id = "hide-button-container-style";
-//         style.textContent = `
-//           html body .button-container {
-//             display: none !important;
-//           }
-//         `;
-//
-//         (document.head || document.documentElement).appendChild(style);
-
-      //       function removeButtons() {
-      //         document.querySelectorAll(".button-container").forEach((el) => {
-      //           el.remove();
-      //         });
-      //       }
-      //
-      //       // Remove any that already exist
-      //       removeButtons();
-      //
-      //       // Watch for elements added later
-      //       const observer = new MutationObserver(() => {
-      //         removeButtons();
-      //       });
-      //
-      //       observer.observe(document.documentElement, {
-      //         childList: true,
-      //         subtree: true,
-      //       });
     }
 
     // NETFLIX
@@ -101,7 +56,7 @@ function hideUI() {
     }
   } else {
     console.error(
-      "This Site is not supported by the WebPlayer UI Remover Extension!",
+      "This Site is not supported by ZenStream!",
     );
   }
 }
